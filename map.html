@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1, user-scalable=no">
+    <title>Geolocation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="animate-in">
+    <nav class="navbar navbar-custom heading" style="border-bottom: 1px solid black;">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav navbar-left">
+                <li><a id="link" href="index.html" style=" font-size: large;">HOME</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a id="link2" href="form.html" style=" font-size: large;">New Entry</a></li>
+                <li><a id="link3" href="DATA.html" style="font-size: large;">Database</a></li>
+                <li><a id="link4" href="map.html" style="font-size: large;">MAP</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="mymap" class="container">    </div>
+    <div id="info"></div>
+    <script src="https://maps.google.com/maps/api/js?sensor=true"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.2.3/firebase.js"></script>
+    <script src="script.js"></script>
+    <script>
+        window.onload = setTimeout(init,5000);
+    </script>
+</body>
+</html>

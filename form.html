@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adding a new entry</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="main" class="animate-in">
+<nav class="navbar navbar-custom heading" style="border-bottom: 1px solid black">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav navbar-left">
+      <li><a id="link" href="index.html" style=" font-size: large;color: white;">HOME</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a id="link2" href="form.html" style=" font-size: large;color: white;">New Entry</a></li>
+      <li><a id="link3" href="DATA.html" style="font-size: large;color: white;">Database</a></li>
+      <li><a id="link4" href="map.html" style="font-size: large;color: white;">MAP</a></li>
+    </ul>
+  </div>
+</nav>
+
+  <div class="container" style="border: none;color: white;">
+    <h1>New Entry</h1>
+    <br>
+    <div class="row">
+      <div class="col-md-6">
+        <form method="post" name="contactForm">
+          <div class="form-group" style="color: white;">
+            <label for="name">Car Name</label>
+            <input type="text" class="form-control" id="name" required placeholder="Name" style="background-color: inherit;color: white;">
+          </div>
+          <div class="form-group">
+            <label for="speed">Vehicle Speed</label>
+            <input type="number" class="form-control" id="speed" required placeholder="Vehicle Speed" style="background-color: inherit;color: white;">
+          </div>
+          <div class="form-group">
+            <label for="load">Engine Load</label>
+            <input type="number" class="form-control" id="load" placeholder="Engine Load" style="background-color: inherit;color: white;">
+          </div>
+          <div class="form-group">
+            <label for="mil">Distance travelled with MIL on</label>
+            <input type="number" class="form-control" id="mil" placeholder="Distance in kms" style="background-color: inherit;color: white;">
+          </div>
+          <div class="form-group">
+            <label for="maf">MAF</label>
+            <input type="number" class="form-control" id="maf" placeholder="MAF" style="background-color: inherit;color: white;">
+          </div>
+          <div class="form-group">
+            <label for="temperature">Catalyst Temperature</label>
+            <input type="number" class="form-control" id="temperature" placeholder="Catalyst Temperature" style="background-color: inherit;color: white;">
+          </div>
+          <div class="form-group">
+            <label for="rpm">RPM</label>
+            <input type="number" class="form-control" id="rpm" placeholder="RPM" style="background-color: inherit;color: white;">
+          </div>
+          <div class="form-group">
+            <label for="os">Oxygen Sensor</label>
+            <input type="number" class="form-control" id="os" placeholder="Oxygen Sensor" style="background-color: inherit;color: white;">
+          </div>
+          <div class="form-group">
+            <label for="aap">Ambient Air Pressure</label>
+            <input type="number" class="form-control" id="aap" placeholder="Ambient Air Pressure" style="background-color: inherit;color: white;">
+          </div>
+          <div class="form-group">
+            <label for="lat">Latitude</label>
+            <input type="text" class="form-control" id="lat" placeholder="Latitude" style="background-color: inherit;color: white;">
+          </div>
+          <div class="form-group">
+            <label for="lon">Longitude</label>
+            <input type="text" class="form-control" id="lon" placeholder="Longitude" style="background-color: inherit;color: white;">
+          </div>
+          <button type="submit" class="btn addValue" style="color: white;background-color: black;">Submit</button>
+          <button type="reset" class="btn" onclick="goBack()" style="color: white;background-color: black;">Back</button>
+        </form>
+        <br><br>
+      </div>
+    </div></div></body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="https://cdn.firebase.com/js/client/2.2.3/firebase.js"></script>
+  <script src="script.js"></script>
+<script>
+  function goBack() {
+      window.history.back();
+  }
+</script>
+</body>
+</html>

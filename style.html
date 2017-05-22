@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EL Project</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="main" class="animate-in">
+<nav class="navbar navbar-custom heading" style="border-bottom: 1px solid black">
+    <div class="container-fluid">
+        <ul class="nav navbar-nav navbar-left">
+            <li><a id="link" href="index.html" style=" font-size: large;">HOME</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a id="link2" href="form.html"  style=" font-size: large;">New Entry</a></li>
+            <li><a id="link3" href="DATA.html" style="font-size: large;">Database</a></li>
+            <li><a id="link4" href="map.html" style="font-size: large;">MAP</a></li>
+        </ul>
+    </div>
+</nav>
+    <h1 class="capitalize" style="font-variant: small-caps;text-align: center;padding-top: 50px;font-size: 50px;font-family: Brush Script Std, Brush Script MT, cursive;">
+        <i><b>El-Project</b></i></h1>
+<blockquote class="blockquote-reverse">
+    <p style="font-size: xx-large;color: #BBBBBB">On Board-Diagnostics</p>
+    <footer style="font-size: large">Group 14</footer>
+</blockquote>
+<br>
+
+<div class="container">
+    <h2 style="font-family: Brush Script Std, Brush Script MT, cursive;text-align: center;font-weight: bold">What are Parameter IDs??</h2>
+    <p style="font-weight: bold">Parameter IDs(PIDs) are codes used to request data from a vehicle, used as a diagnostic tool.
+        SAE standard J/1979 defines many PIDs, but manufacturers also define many more PIDs specific to their vehicles.
+        Typically, an automotive technician will use PIDs with a scan tool connected to the vehicle's OBD-II connector.
+        PIDS include: Status of the OBD II System Component Monitors (Ready or Complete, or Not Ready or Incomplete)
+        Live Sensor Data (Oxygen sensor rich/lean indication, coolant temperature, MAP value, TPS value, vehicle speed,
+        mass air flow, ambient temperature, engine rpm, etc.) Status of Switches or Devices (cruise control on/off.
+        brake pedal switch on/off. TCC engaged/disengaged, etc.) Long and Short Term Fuel Trim, O2 sensor cross counts,
+        injector duration.</p>
+</div>
+<br>
+<div class="container">
+    <h2 style="font-family: Brush Script Std, Brush Script MT, cursive;text-align: center;font-weight: bold">Task at hand</h2>
+    <p style="font-weight: bold">We will be sending all the encoded data collected from the OBD to the Raspberry Pie.
+        Then the Raspberry Pie will decode the current data and send it to the Firebase Database using the inbuilt
+        wi-fi function present in Raspberry Pie. The Firebase Database will get the Values and print the values on the
+        Webpage because of its built-in Realtime functionality function. Also we will be pointing the location of the
+        cars whose data are stored in the Firebase.</p>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="https://cdn.firebase.com/js/client/2.2.3/firebase.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+#contacts p,
+#contacts p.lead{
+    margin: 0;
+}
+body {
+    background-image:url("elephant.jpg");
+    font-family: Lato;
+    color: black;
+    background-attachment: fixed;
+}
+
+div.container {
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    border-color: black;
+    color: #BBBBBB;
+}
+#link:hover {
+    background-color: whitesmoke;
+}
+.navbar-custom {
+    background-color:rgba(0,0,255,0);
+    color:whitesmoke;
+    border-radius:0;
+}
+
+.navbar-custom .navbar-nav > li > a {
+    color:#000;
+}
+.nav-custom .navbar-brand > a:hover {
+    background-color: whitesmoke;
+    color: transparent;
+}
+html{
+    background-color: black;
+    background-image: url("ep_naturalblack.png");
+}
+
+.navbar-custom .navbar-nav > .active > a {
+    color: #000000;
+    background-color:transparent;
+}
+
+.navbar-custom .navbar-brand {
+    color:#000000;
+}
+.navbar-custom .navbar-toggle {
+    background-color:#0000ee;
+}
+.navbar-custom .icon-bar {
+    background-color:#000033;
+}
+#link{
+    color: #BBBBBB;
+    font-family: Lato, Century Gothic, Brush Script Std, Brush Script MT, cursive;
+}
+#link:hover{
+    color: #000000
+}
+#link2{
+    color: #BBBBBB;
+    font-family: Lato, Century Gothic, Brush Script Std, Brush Script MT, cursive;
+}
+#link2:hover{
+    color: #000000
+}
+#link3{
+    color: #BBBBBB;
+    Lato, font-family: Century Gothic, Brush Script MT, cursive;
+}
+#link3:hover{
+    color: #000000
+}
+#link4{
+    color: #BBBBBB;
+    font-family: Lato, Century Gothic, Brush Script MT, cursive;
+}
+#link4:hover{
+    color: #000000
+}
+@media screen and (max-width: 900px) {
+    #link{
+        text-align: center;
+        border-bottom: 1px solid black;
+        color: floralwhite;
+    }
+    #link:hover{
+        color: #000000
+    }
+    #link2{
+        text-align: center;
+        border-bottom: 1px solid black;
+    }
+    #link2:hover{
+        color: #000000
+    }
+    #link3{
+        text-align: center;
+        border-bottom: 1px solid black;
+    }
+    #link3:hover{
+        color: #000000
+    }
+    #link4{
+        text-align: center;
+        border-bottom: 1px solid black;
+    }
+    #link4:hover{
+        color: #000000
+    }
+}
+
+#mymap{
+    width: 1000px;
+    height: 600px;
+}
+@media screen and (max-width: 750px)
+{
+    #mymap {
+        width: 500px;
+        height: 500px;
+    }
+}
+h1
+{
+    color: #FFF;
+    font-family: Lato, Century Gothic, Brush Script MT, cursive;
+}
+h2
+{
+    color: #BBBBBB;
+    font-family: Lato, Century Gothic, Brush Script MT, cursive;
+}
+h3
+{
+    color: #BBBBBB;
+    font-family: Lato, Century Gothic, Brush Script MT, cursive;
+}
+h4
+{
+    color: #BBBBBB;
+    font-family: Lato, Century Gothic, Brush Script MT, cursive;
+}
+h5
+{
+    color: #BBBBBB;
+    font-family: Lato, Century Gothic, Brush Script MT, cursive;
+}
+h6
+{
+    color: #BBBBBB;
+    font-family: Lato, Century Gothic, Brush Script MT, cursive;
+}
+
+
+
+
+
+.animate-in {
+    -webkit-animation: fadeIn 1s ease-in;
+    animation: fadeIn 1s ease-in;
+}
+.animate-out {
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+    opacity: 0;
+}
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
